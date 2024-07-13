@@ -63,12 +63,20 @@ public class MainMenuController : MonoBehaviour
         StartCoroutine(LoadLevel(8));
     }
 
+    public void OpenLevel3()
+    {
+        level = 3;
+        StartCoroutine(LoadLevel(9));
+    }
+
     public void Retry()
     {
         if(level == 1)
             StartCoroutine(LoadLevel(7));
         if(level == 2)
            StartCoroutine(LoadLevel(8));
+        if(level == 3)
+            StartCoroutine(LoadLevel(9));
     }
 
     public void OpenStory()

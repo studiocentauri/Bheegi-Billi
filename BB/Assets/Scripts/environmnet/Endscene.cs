@@ -48,8 +48,10 @@ public class Endscene : MonoBehaviour
         SaveScore();
         if (MainMenuController.level == 1)
         {
-            StartCoroutine(LoadLevel(9));
+            StartCoroutine(LoadLevel(7));
         }
+        else if (MainMenuController.level == 2) { StartCoroutine(LoadLevel(8)); }
+        else if (MainMenuController.level == 3) { StartCoroutine(LoadLevel(9)); }
         else
         {
             StartCoroutine(LoadLevel(12));
